@@ -4,7 +4,7 @@ import { CommandEmpty, CommandInput, CommandItem, CommandList, CommandGroup, Com
 import { Button } from '../ui/button';
 import Link from 'next/link';
 import { Page, resources } from './_content';
-import { EMAIL, PHONE_NUMBER } from '../content';
+import { EMAIL, PHONE_NUMBER } from '@/lib/constants';
 import { CiMail, CiPhone } from 'react-icons/ci';
 
 export default function Search({ pages }: { pages: Page[] }) {

@@ -5,7 +5,7 @@ import {
 	NavigationMenuLink,
 } from '@/components/ui/navigation-menu';
 import { NavItem } from './nav-item';
-import Logo from '@/components/logo';
+import Logo from '@/components/assets/logo';
 
 export const AboutNavContent = (
 	<>

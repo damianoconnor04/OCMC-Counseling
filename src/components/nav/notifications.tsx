@@ -19,7 +19,7 @@ export default function Notifications() {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button variant="outline" size="icon" className="border-none shadow-none">
+				<Button variant="outline" size="icon" className="border-none bg-transparent shadow-none">
 					<PiBell className="h-[1.2rem] w-[1.2rem]" />
 					<span className="sr-only">Notifications and upcoming events</span>
 				</Button>

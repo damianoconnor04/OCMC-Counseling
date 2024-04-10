@@ -19,7 +19,7 @@ export default function NavDrawer() {
 	return (
 		<Drawer open={open} onOpenChange={setOpen}>
 			<DrawerTrigger asChild>
-				<Button variant="outline" size="icon" className="border-none shadow-none">
+				<Button variant="outline" size="icon" className="border-none bg-transparent shadow-none">
 					<HamburgerMenuIcon className="h-[1.2rem] w-[1.2rem]" />
 					<span className="sr-only">Open navigation menu</span>
 				</Button>

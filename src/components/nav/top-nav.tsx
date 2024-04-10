@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-import Logo from '../logo';
 import { ModeToggle } from './mode-toggle';
 import {
 	NavigationMenu,
@@ -14,6 +13,7 @@ import Notifications from './notifications';
 import Search from './search';
 import { pages } from './_content';
 import NavDrawer from './mobile/nav-drawer';
+import Logo from '../assets/logo';
 
 export default function TopNav() {
 	return (
@@ -38,7 +38,7 @@ export default function TopNav() {
 				</div>
 
 				<div className="flex flex-1 items-center justify-end gap-2">
-					<div className="hidden sm:block">
+					<div className="hidden md:block">
 						<Search pages={pages} />
 					</div>
 					<Notifications />
