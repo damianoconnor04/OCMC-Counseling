@@ -11,7 +11,6 @@ export default function Contact() {
     return (
         <main className="relative min-h-[calc(100vh-56px)]">
             <section className="container mx-auto flex min-h-full max-w-[980px] flex-col items-center gap-2 py-6 md:py-8 md:pb-6 lg:py-12 lg:pb-10">
-
                 <PageHeader title="Get in touch" className="justify-center" />
 
                 <ContactForm />
@@ -32,7 +31,6 @@ export default function Contact() {
                         </Button>
                     </div>
                 </div>
-
             </section>
         </main>
     )

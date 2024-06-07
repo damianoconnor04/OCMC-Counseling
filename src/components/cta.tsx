@@ -6,9 +6,9 @@ import { BsFillDoorOpenFill } from 'react-icons/bs';
 export default function Cta() {
 	return (
 		<ScrollArea className="container mb-4 px-0 md:mb-8 lg:mb-12">
-			<nav className="flex items-center gap-8 pb-2 md:pb-4">
+			<nav className="flex items-center gap-4  md:gap-8 pb-2 md:pb-4">
 				{cards.map((card, idx) => (
-					<Link key={idx} href={card.href} className="max-w-screen group flex h-40 max-h-40 shrink-0 flex-col justify-between overflow-hidden rounded-xl border bg-background p-4 transition-colors duration-200 ease-in-out hover:bg-primary/5 md:w-[40ch] md:max-w-[40ch]">
+					<Link key={idx} href={card.href} className="max-w-[calc(100vw-100px)] focus-visible:yellow-ring focus-visible:outline-none group flex h-40 max-h-40 shrink-0 flex-col justify-between overflow-hidden rounded-xl border bg-background p-4 transition-colors duration-200 ease-in-out hover:bg-primary/5 md:w-[40ch] md:max-w-[40ch]">
 						{card.content}
 					</Link>
 				))}
@@ -21,7 +21,7 @@ export default function Cta() {
 
 const cards = [
 	{
-		href: "#life-transitions",
+		href: "#transitions",
 		content:
 			<>
 				<div className="relative mb-2 h-14">

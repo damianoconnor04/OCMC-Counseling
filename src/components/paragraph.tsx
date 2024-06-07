@@ -18,7 +18,7 @@ type ParagraphHeaderProps = {
 function ParagraphHeader({ title, children }: ParagraphHeaderProps) {
 	return (
 		<div className="group flex w-full items-center justify-between">
-			<h1 className="text-left text-lg font-bold tracking-tight md:text-2xl md:leading-[1.15]">{title}</h1>
+			<h1 className="text-left text-lg font-bold tracking-tight md:text-2xl md:leading-[1.15] scroll-pt-72">{title}</h1>
 			{children}
 		</div>
 	)

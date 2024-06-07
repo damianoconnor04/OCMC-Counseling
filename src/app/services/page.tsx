@@ -16,10 +16,12 @@ export default function Services() {
 
                 <PageHeader title="Services">
                     <TooltipProvider>
-                        <Tooltip delayDuration={300}>
+                        <Tooltip delayDuration={200}>
                             <TooltipTrigger asChild>
-                                <Button variant="ghost" size="icon" className="cursor-default" aria-label="additional service offerings popup">
-                                    <IoIosHelpCircleOutline className="text-2xl" />
+                                <Button asChild variant="ghost" size="icon" className="cursor-default" aria-label="additional service offerings popup">
+                                    <Link href="/contact">
+                                        <IoIosHelpCircleOutline className="text-2xl" />
+                                    </Link>
                                 </Button>
                             </TooltipTrigger>
                             <TooltipContent>

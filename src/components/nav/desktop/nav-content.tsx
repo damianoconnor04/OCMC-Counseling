@@ -4,12 +4,12 @@ import {
 	NavigationMenuContent,
 	NavigationMenuLink,
 } from '@/components/ui/navigation-menu';
-import { NavItem } from './nav-item';
+import NavItem from './nav-item';
 import Logo from '@/components/assets/logo';
 
 export const AboutNavContent = (
 	<>
-		<Link href="/about" legacyBehavior passHref>
+		<Link href="/about" tabIndex={-1}>
 			<NavigationMenuTrigger className="focus-visible:yellow-ring px-2 focus-visible:outline-none">
 				About
 			</NavigationMenuTrigger>
@@ -32,7 +32,7 @@ export const AboutNavContent = (
 
 export const ServicesNavContent = (
 	<>
-		<Link href="/services" legacyBehavior passHref>
+		<Link href="/services" tabIndex={-1}>
 			<NavigationMenuTrigger className="focus-visible:yellow-ring px-2 focus-visible:outline-none">
 				Services
 			</NavigationMenuTrigger>

@@ -13,34 +13,34 @@ const sans = DM_Sans({ subsets: ["latin"] });
 export { inter, sans };
 
 export const metadata: Metadata = {
-  title: "OCMC Counseling",
-  description: "Bianca O'Connor McDermott is a Licensed Professional Counselor providing mental health and aging psychotherapy by telehealth in Pennsylvania.",
+	title: "OCMC Counseling",
+	description: "Bianca O'Connor McDermott is a Licensed Professional Counselor providing mental health and aging psychotherapy by telehealth in Pennsylvania.",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen antialiased")}>
-        <NextTopLoader
-          color="#ffc552"
-          shadow="none"
-          showAtBottom
-        />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Toaster />
-          <TopNav />
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" suppressHydrationWarning>
+			<body className={cn("min-h-screen antialiased")} suppressHydrationWarning>
+				<NextTopLoader
+					color="#ffc552"
+					shadow="none"
+					showAtBottom
+				/>
+				<ThemeProvider
+					attribute="class"
+					defaultTheme="system"
+					enableSystem
+					disableTransitionOnChange
+				>
+					<Toaster  />
+					<TopNav />
+					{children}
+				</ThemeProvider>
+			</body>
+		</html>
+	);
 }

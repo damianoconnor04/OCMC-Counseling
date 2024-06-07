@@ -12,6 +12,6 @@ export const items = [
 	{
 		id: "experience",
 		title: "Training & Experience",
-		description: "I have a Master’s Degree in Counseling Psychology, and am licensed to practice psychotherapy in Pennsylvania. I practice Humanistic, Solution Focused, and Client-Centered Counseling. Before becoming an individual therapist in Pennsylvania, I worked in developing and delivering community and mental health services for older adults in Arizona. Throughout my career I have worked closely with older adults, caregivers, victims of intimate partner violence, members of the disability community, and residents in long term care. I have worked in elder abuse prevention and suicide prevention. I have lived experience with chronic illness, disability, suicide, and am a member of the LGBTQ+ community. I bring all this professional and personal experience to my practice."
+		description: "I am independently licensed to practice psychotherapy with clients in Pennsylvania, with Master's level training in Counseling Psychology. My approach is Humanistic, Person-Centered, and Strengths Based. Before becoming an individual therapist here in Pennsylvania, I was developing and delivering community and mental health services in Arizona. Throughout my career I have worked closely with older adults, caregivers, members of the disability community, and residents in long term care. I have lived experience with chronic illness, disability, suicide; and am a member of the LGBTQ+ community."
 	},
 ]

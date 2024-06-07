@@ -14,8 +14,8 @@ export default function About() {
     return (
         <main className="relative min-h-[calc(100vh-56px)]">
             <section className="container mx-auto max-w-[980px] py-6 md:py-8 md:pb-6 lg:py-12 lg:pb-10">
-                <PageHeader title="About Me">
-                    <span className="hidden md:block"><PsychologyTodayBadge /></span>
+                <PageHeader className="relative" title="About Me">
+                    <span className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2"><PsychologyTodayBadge /></span>
                 </PageHeader>
 
                 <div className="flex flex-col gap-8 md:flex-row">

@@ -1,9 +1,9 @@
 "use client";
 import React from 'react'
-import { CommandEmpty, CommandInput, CommandItem, CommandList, CommandGroup, CommandDialog } from '../ui/command';
-import { Button } from '../ui/button';
+import { CommandEmpty, CommandInput, CommandItem, CommandList, CommandGroup, CommandDialog } from './ui/command';
+import { Button } from './ui/button';
 import Link from 'next/link';
-import { Page, resources } from './_content';
+import { Page, resources } from './nav/_content';
 import { EMAIL, PHONE_NUMBER } from '@/lib/constants';
 import { CiMail, CiPhone } from 'react-icons/ci';
 
@@ -69,6 +69,7 @@ export default function Search({ pages }: { pages: Page[] }) {
 						))}
 					</CommandGroup>
 				</CommandList>
+                <div onClick={() => setOpen(false)} className="grow" />
 			</CommandDialog>
 		</>
 	)

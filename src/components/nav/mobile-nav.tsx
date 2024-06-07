@@ -6,14 +6,14 @@ import {
 	DrawerTrigger,
 } from "@/components/ui/drawer"
 import { ArrowRightIcon, HamburgerMenuIcon } from '@radix-ui/react-icons';
-import { pages } from '../_content';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { pages } from './_content';
 import Search from '../search';
 
 
-export default function NavDrawer() {
+export default function MobileNav() {
 	const [open, setOpen] = React.useState<boolean>(false);
 
 	return (

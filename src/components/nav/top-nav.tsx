@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-import { ModeToggle } from './mode-toggle';
 import {
 	NavigationMenu,
 	NavigationMenuItem,
@@ -9,11 +8,12 @@ import {
 	navigationMenuTriggerStyle,
 } from '../ui/navigation-menu';
 import { cn } from '@/lib/utils';
-import Notifications from './notifications';
-import Search from './search';
 import { pages } from './_content';
-import NavDrawer from './mobile/nav-drawer';
 import Logo from '../assets/logo';
+import MobileNav from './mobile-nav';
+import Search from '../search';
+import Notifications from '../notifications';
+import { ModeToggle } from '../mode-toggle';
 
 export default function TopNav() {
 	return (
@@ -44,7 +44,7 @@ export default function TopNav() {
 					<Notifications />
 					<ModeToggle />
 					<div className="sm:hidden">
-						<NavDrawer />
+                        <MobileNav />
 					</div>
 				</div>
 			</div>
