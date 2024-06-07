@@ -30,7 +30,7 @@ export default function Search({ pages }: { pages: Page[] }) {
 			</Button>
 			<CommandDialog open={open} onOpenChange={setOpen}>
 				<CommandInput className="h-12" placeholder="Search..." />
-				<CommandList className="p-3">
+				<CommandList className="p-3 md:max-h-[300px] max-h-full">
 					<CommandEmpty>No results found.</CommandEmpty>
 					<CommandGroup heading="Pages">
 						{pages.map((page, idx) => (
