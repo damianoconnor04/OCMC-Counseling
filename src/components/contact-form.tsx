@@ -34,26 +34,7 @@ export default function ContactForm() {
     const [loading, setLoading] = React.useState(false);
 
 	async function onSubmit(values: z.infer<typeof emailSchema>) {
-		try {
-            setLoading(true);
-			const response = await fetch('/api', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify({
-                    name: values.name,
-                    email: values.email,
-                    message: values.message
-                }),
-			});
-            setLoading(false);
-            if (response.ok) {
-                console.log("wooooo")
-            }
-		} catch (error) {
-			console.error('Error sending email', error);
-		}
+        alert("Sorry, this form is currently disabled. Please email bianca@biancaocmccounseling.com");
 	}
 
 
